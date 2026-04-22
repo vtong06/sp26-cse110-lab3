@@ -1,0 +1,131 @@
+:root {
+    --main-color: #bd2121;
+    --accent-color: rgb(255, 99, 71);
+    --bg-color: hsl(0, 90%, 76%);
+}
+
+header {
+    top: 0;
+    background-color: rgb(237, 206, 71);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 4px dashed var(--main-color);
+    border-radius: 8px;
+    position: sticky;
+    top: 0;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+}
+
+body {
+    color: var(--text-color, black);
+    background-color: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: rgb(228, 33, 33);
+    font-size: 2em;
+}
+
+h2 {
+    color: rgba(0, 128, 0, 0.8);
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+h3 {
+    color: #FF5733;
+    margin-bottom: 1in;
+}
+
+p {
+    color: color(display-p3 0.2 0.5 0.7);
+    font-size: 2vw;
+    text-align: center;
+    text-decoration: none;
+} 
+    
+main {
+    margin: 20px auto 20px auto;
+}
+
+
+section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img {
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+video {
+    border: 4px dashed var(--main-color);
+    border-radius: 8px;
+    width: 480px;
+}
+
+button{
+    background-color: color-mix(in srgb, yellow 50%, white 50%);
+    padding: 5pt;
+    position: relative;
+    top: 5px;
+}
+
+hr {
+    display: none;
+}
+
+audio {
+    width: 300px;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    img {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
