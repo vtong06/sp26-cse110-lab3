@@ -1,62 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Meeting Notes</title>
-  </head>
-  <body>
-    <div class="Headings">
-    <header>
-      <h1>Meeting 1</h1>
-      <h2>Topic: Solve the Upcoming Crisis</h2>
-      <h3>Date: April 14, 2026</h3>
-    </header>
-    </div>
-    <hr>
-    <div class="content">
-    <main>
-        <img src="media/download.jpg" alt="The Flash">
-        <section>
-            <h2>Attendance:</h2>
-            <ul>
-                <li>Barry</li>
-                <li>Harry</li>
-                <li>Cisco</li>
-                <li>Caitlyn</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Agenda:</h2>
-            <ol>
-                <li>Introduction</li>
-                <li>Ice Breaker</li>
-                <li>Discuss project goals</li>
-            </ol>
-        </section>
-        <section>
-            <h2>Goals:</h2>
-            <p>Discuss how to defeat the metahuman of the week to save the city</p>
-        </section>
-        <details>
-            <summary>Questions, Comments, & Concerns</summary>
-            <p>The metahuman is very <b>powerful</b> and has the potential to <b>destroy</b> the city. 
-                If no <i>countermeasures</i> are taken, we could look at the end of the world </p>
-        </details>
-        <section>
-            <video width="480" controls>
-                <source src="media/The_Flash_intro.mp4" type="video/mp4">
-            </video>
-            <br> 
-            <audio controls>
-                <source src="media/The_Flash_intro.mp3" type="audio/mpeg">
-            </audio>
-        </section>
-        <section>
-            <form>
-                <input type="text">
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
-    </div>
-  </body>
+    <head>
+        <link rel="stylesheet" href="mystyle.css">
+        <title>Meeting Notes</title>
+    </head>
+    <body>
+        <div class="Headings">
+            <header>
+                <h1>Meeting 1</h1>
+                <h1>Topic: Solve the Upcoming Crisis</h1>
+                <h3>Date: April 14, 2026</h3>
+            </header>
+        </div>
+        <hr>
+        <div class="content">
+            <main>
+                <section class="grid-container">
+                    <img src="media/download.jpg" alt="The Flash">
+                    <p>The Flash is a DC Comics superhero known as the
+                        "Fastest Man Alive,"
+                        possessing superhuman speed derived from the Speed
+                        Force. Struck by lightning and chemicals,
+                        he gained the ability to run, think, and react near the
+                        speed of light, phase through solid objects,
+                        and travel through time. As a forensic scientist, he
+                        protects Central City and is a
+                        founding member of the Justice League.</p>
+                    <section>
+                        <h2 class="a">Attendance:</h2>
+                        <ul id="one">
+                            <li><strong>Barry</strong></li>
+                            <li><strong>Harry</strong></li>
+                            <li><strong>Cisco</strong></li>
+                            <li><strong>Caitlin</strong></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2 class="a">Agenda:</h2>
+                        <ol id="one">
+                            <li>Introduction</li>
+                            <li>Ice Breaker</li>
+                            <li>Discuss project goals</li>
+                        </ol>
+                    </section>
+                    <section class="bdr">
+                        <h2 class="a">Goals:</h2>
+                        <p id="one">Discuss how to defeat the metahuman of the week to
+                            save the city</p>
+                    </section>
+                    <section class="border">
+                        <h2 class="a">Decisions Made</h2>
+                        <ul id="one">
+                            <li>Confirmed: Use of the particle accelerator is a
+                                last resort.</li>
+                            <li>Give the villian a chance to surrender</li>
+                            <li>If they still refues, detain them and throw them in the pipeline</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <details>
+                    <summary>Questions, Comments, & Concerns</summary>
+                    <p id="one">The metahuman is very <b>powerful</b> and has the
+                        potential to <b>destroy</b> the city.
+                        If no <i>countermeasures</i> are taken, we could look at
+                        the end of the world </p>
+                </details>
+                <section class="flex-container">
+                    <video width="480" controls>
+                        <source src="media/The_Flash_intro.mp4"
+                            type="video/mp4">
+                    </video>
+                    <br>
+                    <audio controls>
+                        <source src="media/The_Flash_intro.mp3"
+                            type="audio/mpeg">
+                    </audio>
+                    <div>
+                        <form>
+                            <input type="text">
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </body>
 </html>
